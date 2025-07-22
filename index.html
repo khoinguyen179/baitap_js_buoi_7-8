@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="number" placeholder="Nhap so vao mang">
+    <button id="btnAdd" onclick="addNumber()"> Thêm </button>
+    <div>
+        <h3>
+            Mảng: <span id="array"></span>
+        </h3>
+    </div>
+    <button id="btnSum" onclick="sum()">Tính tổng</button>
+    <span id="sum"> </span>
+    <br>
+    <button id="btnCount" onclick="count()">Đếm số lượng phần tử trong mảng</button>
+    <span id="count">
+    </span>
+    <br>
+    <button id="btnMin" onclick="findMin()">Tìm số nhỏ nhất trong mảng</button>
+    <span id="min">
+    </span>
+    <br>
+    <button id="btnPositiveMin" onclick="findPositiveMin()">Tìm số dương nhỏ nhất trong mảng</button>
+    <span id="positiveMin"></span>
+    <br>
+    <button id="btnFindLastEvenNumber" onclick="findLastEvenNumber()">Tìm số chẳn cuối cùng trong mảng</button>
+    <span id="lastEvenNumber"></span>
+    <br>
+    <input type="text" id="number_1">
+    <input type="text" id="number_2">
+    <button id="btnSwap" onclick="swap()">Đổi chỗ 2 phần tử trong mảng</button>
+    <span id="arrayAfterSwap" ></span>
+    <br>
+    <button id="btnAscSort" onclick="sortAscending()">Sắp xếp tăng dần</button>
+    <span id="arrayAfterSort"></span>
+    <br>
+    <button id="btnFirstPrimeNumber" onclick="firstPrimeNumber()">Tìm số nguyên tố đầu tiên</button>
+    <span id="primeNumber"></span>
+    <br>
+    <input type="text" id="floatNumber">
+    <button id="btnAddFloatArray" onclick="addFloatNumber()">Thêm vào mảng số thực</button>
+    <div>
+        <h3>
+            Mảng số thực: <span id="floatArray"></span>
+        </h3>
+    </div>
+    <button id="btnCountIntegerOnFloatArray" onclick="countIntegerOnFloatArray()">Đếm số nguyên trong mảng số thực</button>
+    <span id="countIntegerOnFloatArray"></span>
+    <br>
+    <button id="btnCompare" onclick="compare()">So sánh số lượng số âm và số dương</button>
+    <span id="compare"></span>
+    <br>
+    <script src="src/main.js"></script>
+</body>
+</html>
