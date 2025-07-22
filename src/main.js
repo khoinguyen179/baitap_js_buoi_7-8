@@ -88,7 +88,7 @@ function sortAscending(){
 function firstPrimeNumber(){
     let primeNumber = -1;
     for (let i=0; i<listNumber.length; i++){
-        if (listNumber[i] > 1){
+        if (listNumber[i] > 2){
             for(let j=2; j<listNumber[i]; j++){
                 if (listNumber[i] % j == 0){
                     break;
@@ -97,6 +97,9 @@ function firstPrimeNumber(){
                     primeNumber = listNumber[i];
                 }
             }
+        }
+        else if (listNumber[i] == 2){
+            primeNumber = listNumber[i];
         }
     }
     document.getElementById("primeNumber").innerHTML= "Số nguyên tố đầu tiên trong mảng: " + primeNumber;
