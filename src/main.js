@@ -100,6 +100,7 @@ function firstPrimeNumber(){
         }
         else if (listNumber[i] == 2){
             primeNumber = listNumber[i];
+            break;
         }
     }
     document.getElementById("primeNumber").innerHTML= "Số nguyên tố đầu tiên trong mảng: " + primeNumber;
